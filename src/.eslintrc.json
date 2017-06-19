@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "plugin": [
+    "react"
+  ],
+  "rules": {
+    "react/jsx-curly-spacing": [ "error", "always" ],
+    "react/prefer-es6-class": [ "error", "always" ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "private": true,
+  "name": "react",
+  "version": "1.0.0",
+  "description": "a react project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -x \"webpack-dev-server --config ./config/webpack.config.dev.js --colors \"",
+    "build": "rimraf ./build && webpack --config ./config/webpack.config.prod.js --progress --colors && node ./config/sprites.js",
+    "deploy": "npm test && gh-pages -d build",
+    "test": "eslint \"**/*.js\" \"**/*.jsx\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lili-an/react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "strong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lili-an/react/issues"
+  },
+  "homepage": "https://github.com/lili-an/react#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "gh-pages": "^0.12.0",
+    "glob": "^7.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "material-ui": "^0.18.1",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^2.0.5",
+    "postcss-sprites": "^4.2.1",
+    "pug": "^2.0.0-rc.1",
+    "pug-loader": "^2.3.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "react-tap-event-plugin": "^2.0.1",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-spritesmith": "^0.3.3"
+  }
+}
